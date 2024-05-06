@@ -1,6 +1,5 @@
 import javascriptLogo from '../img/javascript.svg'
 import viteLogo from '../img/vite.svg'
-import { setupCounter } from '../js/counter.js'
 
 document.querySelector('#app').innerHTML = `
   <div>
@@ -12,12 +11,15 @@ document.querySelector('#app').innerHTML = `
     </a>
     <h1>Hello Vite!</h1>
     <div class="card">
-      <button id="counter" type="button"></button>
+      <button id="counter" type="button">Hola, mundo!</button>
     </div>
     <p class="read-the-docs">
       Click on the Vite logo to learn more
     </p>
+    <a id="toggle-button" href="#">Cambiar a modo claro</a>
+    <label id="switch">
+      <input type="checkbox" />
+      <span class="slider round"></span>
+    </label>
   </div>
 `
-
-setupCounter(document.querySelector('#counter'))

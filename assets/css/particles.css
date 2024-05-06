@@ -20,6 +20,7 @@ canvas {
      background-position: 50% 50%;
      display: flex;
      justify-content: center;
+     margin: 0;
 }
 
 /* ---- stats.js ---- */

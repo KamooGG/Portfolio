@@ -4,14 +4,30 @@
   font-weight: 400;
 
   color-scheme: light dark;
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --font-color: rgba(255, 255, 255, 0.87);
+  --background-color: #242424;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+[theme = "light"]{
+  --font-color: #213547;
+  --background-color: #ffffff;
+}
+
+#particles-js{
+  display: flex;
+  justify-content: center;
+}
+
 
 a {
   font-weight: 500;
@@ -30,6 +46,8 @@ body {
   min-height: 100vh;
   justify-content: center;
   align-items: center;
+  background-color: var(--background-color);
+  color: var(--font-color);
 }
 
 h1 {
