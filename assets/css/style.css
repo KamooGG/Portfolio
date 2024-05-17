@@ -94,6 +94,7 @@ p{
   flex-direction: row;
   justify-content: space-between;
   min-width: 100%;
+  z-index: 1;
 }
 
 .fixedSection{
@@ -119,8 +120,34 @@ p{
 }
 
 .codeFont{
-  font-family: "Source Code Pro";
+  font-family: "Source Code Pro", 'Courier New', Courier, monospace;
 }
 
 /* Estilos de índice y anclas para el contenido */
 
+
+.index {
+  width: 200px;
+  padding: 20px;
+  background-color: #f4f4f4;
+  border-right: 1px solid #ccc;
+}
+
+.index ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.index li {
+  margin-bottom: 10px;
+}
+
+.index-link {
+  text-decoration: none;
+  color: #333;
+}
+
+.index-link.active {
+  font-weight: bold;
+  color: #007BFF;
+}
