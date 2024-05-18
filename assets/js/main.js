@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
   // Función para quitar la clase 'active' de todos los enlaces
   function removeActiveClasses() {
-      links.forEach(link => link.classList.remove('active'));
+      links.forEach(link => link.classList.remove('active', 'scroll-animation'));
   }
 
   // Función para añadir la clase 'active' al enlace correspondiente
@@ -12,14 +12,17 @@ document.addEventListener('DOMContentLoaded', function() {
       const activeLink = document.querySelector(`a[href="#${id}"]`);
       
       if (activeLink) {
-          activeLink.classList.add('active');
+          activeLink.classList.add('active', 'scroll-animation');
+          setTimeout(() => {
+            activeLink.classList.remove('scroll-animation');
+          }, 2000); // Remover la clase después de 1 segundo
       }
   }
 
   // Usando IntersectionObserver para detectar cuando una sección entra en la vista
   const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-          if (entry.isIntersecting) {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.001) {
               const id = entry.target.getAttribute('id');
               removeActiveClasses();
               addActiveClass(id);
@@ -28,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }, {
       root: null,
       rootMargin: '0px',
-      threshold: 0.7 // Ajusta el umbral según sea necesario
+      threshold: 0.001 // Ajusta el umbral según sea necesario
   });
 
   // Observando cada sección
@@ -52,6 +55,10 @@ document.addEventListener('DOMContentLoaded', function() {
 
               removeActiveClasses();
               this.classList.add('active');
+              this.classList.add('scroll-animation');
+              setTimeout(() => {
+                this.classList.remove('scroll-animation');
+              }, 2000); // Remover la clase después de 1 segundo
           }
       });
   });

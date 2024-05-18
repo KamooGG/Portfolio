@@ -1,27 +1,17 @@
-@font-face {
-  font-family: "Briem Hand";
-  src: url(../fonts/BriemHand/BriemHand-VariableFont_wght.ttf);
-}
+@import url(fonts.css);
 
-@font-face {
-  font-family: "Source Code Pro";
-  src: url(../fonts/SourceCodePro/SourceCodePro-VariableFont_wght.ttf);
-}
-
-@font-face {
-  font-family: "Roboto Slab";
-  src: url(../fonts/Roboto_Slab/RobotoSlab-VariableFont_wght.ttf);
-}
 :root {
-  font-family: "Roboto Slab", Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-optical-sizing: auto;
   line-height: 1.5;
   font-weight: 400;
   font-style: normal;
 
   color-scheme: light dark;
-  --font-color: rgba(255, 255, 255, 0.87);
+  --font-color: #add9b8;
   --background-color: #181818;
+  --green-color: #14e956;
+  --resalted-color: #ffffff;
 
   font-synthesis: none;
   text-rendering: optimizeLegibility;
@@ -36,10 +26,11 @@
   padding: 0;
   scrollbar-width: thin;
   scrollbar-color: #10e956;
+  color: var(--font-color);
 }
 
 body{
-  font-family: "Roboto Slab", cursive, Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: Inter, cursive, system-ui, Avenir, Helvetica, Arial, sans-serif;
   font-optical-sizing: auto;
   line-height: 1.5;
   font-weight: 400;
@@ -78,8 +69,8 @@ h6{
 }
 
 p{
-  font-size: 1.5em;
-  font-weight: 300;
+  font-size: 1.3em;
+  font-weight: 400;
 }
 #particles-js{
   display: flex;
@@ -93,30 +84,34 @@ p{
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  min-width: 100%;
   z-index: 1;
+  max-width: 1120px;
 }
 
 .fixedSection{
   position: sticky;
   max-height: 100vh;
   top: 0;
+  width: 40%;
 }
 
 .mainInfo{
-  width: 50vw;
   padding-left: 3rem;
-  padding-top: 6rem;
-  padding-bottom: 6rem;
+  padding-top: 6em;
+  padding-bottom: 6em;
 }
 
 .generalInfo{
-  padding: 50px;
+  padding: 6em;
   max-width: 50vw;
 }
 
+.generalInfo__section{
+  padding-bottom: 50px;
+}
+
 .greenFont{
-  color: #14e956;
+  color: var(--green-color);
 }
 
 .codeFont{
@@ -127,10 +122,10 @@ p{
 
 
 .index {
-  width: 200px;
-  padding: 20px;
-  background-color: #f4f4f4;
-  border-right: 1px solid #ccc;
+  font-size: 13px;
+  text-transform: uppercase;
+  font-weight: 700;
+  margin-top: 100px;
 }
 
 .index ul {
@@ -144,10 +139,83 @@ p{
 
 .index-link {
   text-decoration: none;
-  color: #333;
+  color: var(--font-color);
+  position: relative; 
+  padding-left: 5px;
 }
 
-.index-link.active {
-  font-weight: bold;
-  color: #007BFF;
+.index-link:hover{
+  color: var(--green-color);
+}
+
+.index-link.active{
+  color: var(--green-color);
+  display: block;
+}
+
+.index-link.active::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -2px;
+  width: 150px; /* Inicialmente sin ancho */
+  height: 2px;
+  background-color: var(--green-color);
+  transition: none; /* Transición del ancho */
+}
+
+.resalted-color{
+  color: var(--resalted-color);
+}
+
+span.resalted-color{
+  font-weight: 600;
+}
+
+.index-link.active:hover::after {
+  width: 150px;
+}
+
+/* Animación al hacer scroll */
+@keyframes borderAnimation {
+  0% {
+    width: 0;
+  }
+  100% {
+    width: 150px;
+  }
+}
+
+.index-link.active.scroll-animation::after {
+  animation: borderAnimation 1s ease-in-out forwards; /* Animación del ancho al hacer scroll */
+}
+
+
+/* Media queries max-width: 768px*/ 
+
+
+@media screen and (max-width: 768px) {
+  .main{
+    display: grid;
+    grid-template-columns: auto;
+    width: 100%;
+    justify-content: center;
+  }
+  .fixedSection{
+    position: static;
+    background-color: #181818;
+    width: 100%;
+  }
+  .mainInfo {
+    padding: 2rem; /* Reducir el relleno en pantallas más pequeñas */
+  }
+
+  .generalInfo {
+    max-width: none;
+    padding: 2rem;
+  }
+
+  .index{
+    display: none;
+  }
 }
