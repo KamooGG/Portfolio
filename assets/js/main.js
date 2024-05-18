@@ -22,7 +22,7 @@ document.addEventListener('DOMContentLoaded', function() {
   // Usando IntersectionObserver para detectar cuando una sección entra en la vista
   const observer = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
-          if (entry.isIntersecting && entry.intersectionRatio >= 0.001) {
+          if (entry.isIntersecting && entry.intersectionRatio >= 0.5) {
               const id = entry.target.getAttribute('id');
               removeActiveClasses();
               addActiveClass(id);
@@ -31,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function() {
   }, {
       root: null,
       rootMargin: '0px',
-      threshold: 0.001 // Ajusta el umbral según sea necesario
+      threshold: 0.5 // Ajusta el umbral según sea necesario
   });
 
   // Observando cada sección

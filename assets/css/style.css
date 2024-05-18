@@ -191,10 +191,10 @@ span.resalted-color{
 }
 
 
-/* Media queries max-width: 768px*/ 
+/* Media queries max-width: 1100px*/ 
 
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 1100px) {
   .main{
     display: grid;
     grid-template-columns: auto;
