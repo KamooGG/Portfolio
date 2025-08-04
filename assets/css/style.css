@@ -51,31 +51,38 @@ h2{
 h3{
   font-size: 2.6em;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 26px;
 }
 
 h4{
-  font-size: 2.3em;
+  font-size: 2em;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 h5{
-  font-size: 2.1em;
+  font-size: 1.4em;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 10px;
 }
 
 h6{
-  font-size: 2em;
+  font-size: 0.8em;
   font-weight: 600;
-  margin-bottom: 30px;
+  margin-bottom: 8px;
 }
 
 p{
   font-size: 1.3em;
   font-weight: 400;
+  margin-bottom: 20px;
+}
+
+ol, ul{
+  font-size: 1.3em;
+  font-weight: 400;
   margin-bottom: 30px;
+  margin-left: 40px;
 }
 #particles-js{
   display: flex;
@@ -128,18 +135,24 @@ p{
 
 .index {
   font-size: 13px;
-  text-transform: uppercase;
   font-weight: 700;
+  text-transform: uppercase;
   margin-top: 100px;
 }
 
 .index ul {
   list-style-type: none;
   padding: 0;
+  font-size: 13px;
+  font-weight: 700;
+  margin-left: 0px;
 }
 
 .index li {
   margin-bottom: 10px;
+  font-size: 13px;
+  font-weight: 700;
+  margin-left: 0px;
 }
 
 .index-link {
@@ -175,6 +188,23 @@ p{
 
 span.resalted-color{
   font-weight: 600;
+}
+
+
+.aboutMe__image{
+  width: 150px;
+  background-image: url("../img/1723596451884.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 150px;
+  border-radius: 50%;
+  margin: 50px 0 15px 15px;
+  float: right;
+  border: #10e956 5px solid;
+}
+
+.aboutMe__text{
+  max-width: 700px;
 }
 
 .index-link.active:hover::after {
@@ -222,5 +252,16 @@ span.resalted-color{
 
   .index{
     display: none;
+  }
+  
+  .aboutMe {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profileImage {
+    margin-left: 0;
+    margin-bottom: 20px;
   }
 }

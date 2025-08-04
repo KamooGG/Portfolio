@@ -1,156 +1,290 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="assets/img/vite.svg" />
-    <link rel="stylesheet" href="assets/css/particles.css" />
-    <link rel="stylesheet" href="assets/css/style.css" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Portfolio</title>
-  </head>
-  <body>
-    <!-- particles.js container -->
-    <div id="particles-js">
-      <div class="main">
-        <section class="fixedSection">
-          <div class="mainInfo">
-            <!--Main information-->
-            <h1 class="resalted-color">Cristian Blanco</h1>
-            <h2 class="greenFont codeFont">Desarrollador Frontend</h2>
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="assets/img/vite.svg" />
+  <link rel="stylesheet" href="assets/css/particles.css" />
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Portfolio</title>
+</head>
+
+<body>
+  <!-- particles.js container -->
+  <div id="particles-js">
+    <div class="main">
+      <section class="fixedSection">
+        <div class="mainInfo">
+          <!--Main information-->
+          <h1 class="resalted-color">Cristian Blanco</h1>
+          <h2 class="greenFont codeFont">Desarrollador Frontend</h2>
+          <p>
+            Construyendo interfaces de usuario pixel-perfect atractivas y
+            experiencias digitales accesibles.
+          </p>
+          <!--end Main information-->
+          <!--Index-->
+          <nav class="index">
+            <ul>
+              <li><a href="#about" class="index-link">Acerca de</a></li>
+              <li><a href="#projects" class="index-link">Proyectos</a></li>
+              <li>
+                <a href="#experience" class="index-link">Experiencia</a>
+              </li>
+            </ul>
+          </nav>
+          <!--end Indice-->
+          <!--Social networks-->
+          <div class="socialContainer">
+            Acá van los socials
+          </div>
+
+          <!--end Social networks-->
+        </div>
+      </section>
+      <section>
+        <div class="generalInfo">
+          <div id="about" class="generalInfo__section">
+            <div class="aboutMe">
+              <div class="aboutMe__image">
+              </div>
+              <div class="aboutMe__text">
+                <h3 class="resalted-color">Acerca de mi</h3>
+                <p>
+                  Soy un apasionado <span class="resalted-color">desarrollador frontend</span> con experiencia sólida en
+                  la
+                  creación de interfaces visuales cautivadoras y funcionales.
+                </p>
+                <p>
+                  Mi enfoque se centra en la <span class="resalted-color">maquetación pixel perfect</span>, utilizando
+                  tecnologías modernas para ofrecer experiencias de usuario
+                  excepcionales.
+                </p>
+                <p>
+                  Para mi trabajo uso <span class="resalted-color">HTML, CSS, Javascript;</span> pero también tengo
+                  experiencia usando frameworks como <span class="resalted-color">Angular 17+, Vue.js, React, Bootstrap,
+                    Tailwind, SASS y Stencil.</span>
+                  Tengo experiencia en manejo de bases de datos y conexiones con
+                  APIs
+                </p>
+              </div>
+            </div>
+          </div>
+          <div id="projects" class="generalInfo__section">
+            <h3 class="resalted-color">Proyectos</h3>
+            <h4 class="resalted-color">Angular</h4>
+            <p>Gestor de Productos</p>
+            <ul>
+              <li>CRUD con Angular Material</li>
+              <li>Formularios reactivos con validaciones</li>
+              <li>Firebase o mock backend</li>
+            </ul>
+            <p>Agenda de contactos con fotos</p>
+            <ul>
+              <li>Rutas por contacto</li>
+              <li>Buscador por nombre</li>
+              <li>RxJS para delays, loading y debounce</li>
+            </ul>
+            <p>Juego educativo tipo "Quiz"</p>
+            <ul>
+              <li>Preguntas por categorías</li>
+              <li>Timer por pregunta</li>
+              <li>Puntuación final</li>
+              <li>Ideal para mostrar lógica + componentes + servicios</li>
+            </ul>
+
+            <h4 class="resalted-color">React</h4>
             <p>
-              Construyendo interfaces de usuario pixel-perfect atractivas y
-              experiencias digitales accesibles.
+              Buscador de Peliculas
             </p>
-            <!--end Main information-->
-            <!--Index-->
-            <nav class="index">
-              <ul>
-                <li><a href="#about" class="index-link">Acerca de</a></li>
-                <li><a href="#projects" class="index-link">Proyectos</a></li>
-                <li>
-                  <a href="#experience" class="index-link">Experiencia</a>
-                </li>
-              </ul>
-            </nav>
-            <!--end Indice-->
-            <!--Social networks-->
-            <div class="socialContainer">
-
-            </div>
-
-            <!--end Social networks-->
+            <ul>
+              <li>
+                API pública (OMDb, TMDb)
+              </li>
+              <li>
+                Rutas dinámicas con React Router
+              </li>
+              <li>
+                Favoritos con Context
+              </li>
+              <li>
+                Deployment en Vercel
+              </li>
+            </ul>
+            <p>
+              Clon de Notion (minimalista)
+            </p>
+            <ul>
+              <li>
+                CRUD de notas
+              </li>
+              <li>
+                Soporte para Markdown
+              </li>
+              <li>
+                Guardado en localStorage o Supabase
+              </li>
+              <li>
+                Demuestra lógica, diseño de componentes y estado
+              </li>
+            </ul>
+            <p>
+              Next.js Blog Personal con Dark Mode
+            </p>
+            <ul>
+              <li>
+                SSG con Markdown
+              </li>
+              <li>
+                Rutas estáticas dinámicas (/post/slug)
+              </li>
+              <li>
+                Diseño moderno con Tailwind CSS
+              </li>
+            </ul>
+            <h4 class="resalted-color">Vue</h4>
+            <p>
+              App de Tareas Avanzada con Vue + Pinia
+            </p>
+            <ul>
+              <li>
+                Subtareas, etiquetas, drag & drop
+              </li>
+              <li>
+                Vue Router
+              </li>
+              <li>
+                Diseño limpio
+              </li>
+            </ul>
+            <p>
+              Clon de tienda (solo frontend)
+            </p>
+            <ul>
+              <li>
+                E-commerce frontend básico (catálogo, carrito, filtro)
+              </li>
+              <li>
+                Sin backend, carrito en localStorage
+              </li>
+              <li>
+                Estilos con Tailwind
+              </li>
+            </ul>
+            <p>
+              Visualizador de clima con geolocalización
+            </p>
+            <ul>
+              <li>
+                API de clima (OpenWeather)
+              </li>
+              <li>
+                Buscar por ciudad o por ubicación actual
+              </li>
+              <li>
+                Iconos e ilustraciones para hacerlo visualmente atractivo
+              </li>
+            </ul>
           </div>
-        </section>
-        <section>
-          <div class="generalInfo">
-            <div id="about" class="generalInfo__section">
-              <h3 class="resalted-color">Acerca de mi</h3>
-              <p>
-                Soy un apasionado <span class="resalted-color">desarrollador web</span> con experiencia sólida en la
-                creación de interfaces visuales cautivadoras y funcionales.
-              </p>
-              <p>
-                Mi enfoque se centra en la  <span class="resalted-color">maquetación pixel perfect</span>, utilizando
-                tecnologías modernas para ofrecer experiencias de usuario
-                excepcionales.
-              </p>
-              <p>
-                Para mi trabajo uso  <span class="resalted-color">HTML, CSS, Javascript;</span> pero también tengo
-                experiencia usando frameworks como  <span class="resalted-color">Angular 17+, SASS y Stencil.</span>
-                Tengo experiencia en manejo de bases de datos y conexiones con
-                APIs
-              </p>
-            </div>
-            <div id="projects" class="generalInfo__section">
-              <h3 class="resalted-color">Proyectos</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                itaque, dignissimos quaerat reiciendis nostrum esse est
-                doloremque autem, commodi mollitia deleniti blanditiis
-                voluptatum veritatis. Iusto sapiente consequuntur unde? Eligendi
-                voluptatibus, cum quas minima perspiciatis mollitia iure. Id at
-                veritatis facere, tempore asperiores dicta nesciunt, velit
-                necessitatibus corrupti dolore eligendi, possimus quas expedita
-                veniam neque deleniti. Ut ipsam vel temporibus, ipsum officia
-                quidem odio enim a totam aut asperiores magni dignissimos
-                doloremque vero laboriosam reprehenderit quasi mollitia vitae
-                atque, minus itaque tempore eveniet. Animi ea, suscipit ipsam
-                fugit excepturi expedita quidem odio? Vel id iusto ratione
-                necessitatibus illo dicta blanditiis minus?
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                itaque, dignissimos quaerat reiciendis nostrum esse est
-                doloremque autem, commodi mollitia deleniti blanditiis
-                voluptatum veritatis. Iusto sapiente consequuntur unde? Eligendi
-                voluptatibus, cum quas minima perspiciatis mollitia iure. Id at
-                veritatis facere, tempore asperiores dicta nesciunt, velit
-                necessitatibus corrupti dolore eligendi, possimus quas expedita
-                veniam neque deleniti. Ut ipsam vel temporibus, ipsum officia
-                quidem odio enim a totam aut asperiores magni dignissimos
-                doloremque vero laboriosam reprehenderit quasi mollitia vitae
-                atque, minus itaque tempore eveniet. Animi ea, suscipit ipsam
-                fugit excepturi expedita quidem odio? Vel id iusto ratione
-                necessitatibus illo dicta blanditiis minus?
-              </p>
-            </div>
-            <div id="experience" class="generalInfo__section">
-              <h3 class="resalted-color">Experiencia</h3>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                itaque, dignissimos quaerat reiciendis nostrum esse est
-                doloremque autem, commodi mollitia deleniti blanditiis
-                voluptatum veritatis. Iusto sapiente consequuntur unde? Eligendi
-                voluptatibus, cum quas minima perspiciatis mollitia iure. Id at
-                veritatis facere, tempore asperiores dicta nesciunt, velit
-                necessitatibus corrupti dolore eligendi, possimus quas expedita
-                veniam neque deleniti. Ut ipsam vel temporibus, ipsum officia
-                quidem odio enim a totam aut asperiores magni dignissimos
-                doloremque vero laboriosam reprehenderit quasi mollitia vitae
-                atque, minus itaque tempore eveniet. Animi ea, suscipit ipsam
-                fugit excepturi expedita quidem odio? Vel id iusto ratione
-                necessitatibus illo dicta blanditiis minus?
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                itaque, dignissimos quaerat reiciendis nostrum esse est
-                doloremque autem, commodi mollitia deleniti blanditiis
-                voluptatum veritatis. Iusto sapiente consequuntur unde? Eligendi
-                voluptatibus, cum quas minima perspiciatis mollitia iure. Id at
-                veritatis facere, tempore asperiores dicta nesciunt, velit
-                necessitatibus corrupti dolore eligendi, possimus quas expedita
-                veniam neque deleniti. Ut ipsam vel temporibus, ipsum officia
-                quidem odio enim a totam aut asperiores magni dignissimos
-                doloremque vero laboriosam reprehenderit quasi mollitia vitae
-                atque, minus itaque tempore eveniet. Animi ea, suscipit ipsam
-                fugit excepturi expedita quidem odio? Vel id iusto ratione
-                necessitatibus illo dicta blanditiis minus?
-              </p>
-              <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis
-                itaque, dignissimos quaerat reiciendis nostrum esse est
-                doloremque autem, commodi mollitia deleniti blanditiis
-                voluptatum veritatis. Iusto sapiente consequuntur unde? Eligendi
-                voluptatibus, cum quas minima perspiciatis mollitia iure. Id at
-                veritatis facere, tempore asperiores dicta nesciunt, velit
-                necessitatibus corrupti dolore eligendi, possimus quas expedita
-                veniam neque deleniti. Ut ipsam vel temporibus, ipsum officia
-                quidem odio enim a totam aut asperiores magni dignissimos
-                doloremque vero laboriosam reprehenderit quasi mollitia vitae
-                atque, minus itaque tempore eveniet. Animi ea, suscipit ipsam
-                fugit excepturi expedita quidem odio? Vel id iusto ratione
-                necessitatibus illo dicta blanditiis minus?
-              </p>
-            </div>
+          <div id="experience" class="generalInfo__section">
+            <h3 class="resalted-color">Experiencia</h3>
+            <h4 class="resalted-color">Web Development Engineer</h4>
+            <p>
+              Clai Payments<br>
+              Agosto 2024 - Julio 2025
+            </p>
+            <p>
+              Desarrollo e implementación de soluciones web para el sector financiero, con enfoque principal en el
+              sistema de adquirencia de Banesco. Trabajo en la creación y mantenimiento de aplicaciones robustas,
+              seguras y escalables, alineadas con los estándares regulatorios y de ciberseguridad del sector bancario.
+            </p>
+            <p>
+              Mis responsabilidades incluyen:
+            </p>
+
+            <ul>
+              <li>
+                Desarrollo de interfaces web modernas y eficientes.
+              </li>
+              <li>
+                Integración con sistemas bancarios internos y plataformas de pago.
+              </li>
+              <li>
+                Trabajo colaborativo con equipos de backend, QA y producto.
+              </li>
+              <li>
+                Aseguramiento de la calidad y cumplimiento de normas PCI DSS.
+              </li>
+              <li>
+                Optimización de rendimiento y experiencia de usuario (UX/UI).
+              </li>
+            </ul>
+            <h4 class="resalted-color">Desarrollador de front-end</h4>
+            <p>
+              Banco Davivienda <br>
+              Diciembre 2021 - Febrero 2024
+            </p>
+            <p>
+              Durante mi tiempo como Desarrollador Web, trabajé en el desarrollo de soluciones digitales utilizando
+              tecnologías como HTML, CSS, y JavaScript. A lo largo de mi experiencia, adquirí conocimientos en
+              frameworks modernos como Angular, Web Components y Stencil, lo que me permitió mejorar la eficiencia y la
+              escalabilidad de los proyectos en los que estuve involucrado.
+            </p>
+            <p>
+              Fui parte del equipo encargado de desarrollar la SuperApp del Banco Davivienda, una aplicación clave para
+              la transformación digital de la entidad. Trabajé bajo la metodología Scrum, lo que me permitió colaborar
+              eficazmente con equipos multidisciplinarios y entregar soluciones de alta calidad dentro de los plazos
+              establecidos. Mi contribución se centró en la implementación de interfaces de usuario intuitivas y en la
+              optimización del rendimiento de la aplicación.
+            </p>
+            <h4 class="resalted-color">Analista de Sistemas de TI</h4>
+            <p>
+              Punto de Pago Multibanco <br>
+              Mayo 2019 - Marzo 2020
+            </p>
+            <ul>
+              <li>
+                Garanticé soporte técnico de hardware y software de todas las oficinas.
+              </li>
+              <li>
+                Garanticé y administré el soporte técnico telefónico de la mesa de ayuda a las oficinas, los diferentes
+                casos de uso de los equipos y de las aplicaciones.
+              </li>
+              <li>
+                Garanticé el soporte en sitio en todas las oficinas, para los casos donde aplicó una visita de soporte
+                técnico.
+              </li>
+              <li>
+                Ejecuté el mantenimiento preventivo a los equipos de comunicaciones y de cómputo.
+              </li>
+              <li>
+                Garanticé el soporte técnico de infraestructura de red e Internet.
+              </li>
+              <li>
+                Mantuve un inventario de repuestos.
+              </li>
+              <li>
+                Servicio técnico remoto y presencial de los terminales de la organización (hardware y software).
+              </li>
+              <li>
+                Propuse, elaboré e implementé nuevos sistemas y componentes necesarios en la organización.
+              </li>
+              <li>
+                Realicé mantenimiento y administración del centro de monitoreo (Circuito cerrado de TV).
+              </li>
+            </ul>
           </div>
-        </section>
-      </div>
+        </div>
+      </section>
     </div>
-    <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
-    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
-    <!-- stats.js lib -->
-    <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
-    <script src="./assets/js/particles.js"></script>
-    <script type="module" src="./assets/js/main.js"></script>
-  </body>
+  </div>
+  <!-- particles.js lib - https://github.com/VincentGarreau/particles.js -->
+  <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+  <!-- stats.js lib -->
+  <script src="https://threejs.org/examples/js/libs/stats.min.js"></script>
+  <script src="./assets/js/particles.js"></script>
+  <script type="module" src="./assets/js/main.js"></script>
+</body>
+
 </html>
